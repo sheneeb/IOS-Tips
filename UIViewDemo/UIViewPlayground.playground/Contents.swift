@@ -13,6 +13,7 @@ import UIKit
 import PlaygroundSupport
 let rect1 = CGRect(x: 200, y: 200, width: 200, height: 150)
 let rect2 = CGRect(x: 10, y: 10, width: 300, height: 200)
+let backgroundImage = UIImage(named: "gradient.jpg")
 
 
 
