@@ -16,5 +16,21 @@ let rect2 = CGRect(x: 10, y: 10, width: 300, height: 200)
 let backgroundImage = UIImage(named: "gradient.jpg")
 
 
+class MyView: UIView{
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    //the above has to be there
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        let imageView = UIImageView(image: backgroundImage)
+        addSubview(imageView)
+    }
+    //these two are needed for UIView
+}
 
+let view = MyView(frame: UIScreen.main.bounds)
+PlaygroundPage.current.liveView = view
+view.backgroundColor = .yellow
 
